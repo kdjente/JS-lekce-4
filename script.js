@@ -74,6 +74,17 @@ const order = {
         document.body.innerHTML = `dobry`
     } else if(znamka === 4) {
         document.body.innerHTML = `dostatecny`
-    } else (
+    } else if(znamka === 5) {
         document.body.innerHTML = `nedostatecny`
-    )
+    } else {
+        document.body.innerHTML = `spatne zadana znamka`
+    }
+
+    switch(znamka) {
+        case 1:
+            document.body.innerHTML += `vyborny`
+        case 2: 
+            document.body.innerHTML += `chvalitebny`
+        default:
+            document.body.innerHTML += `spatne zadana znamka`
+    }
